@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f7f7;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      background-color: #333333;
+      color: white;
+      height: 70px;
+      align-items: center;
+      font-size: large;
+      width: 100%;
+    }
+    .logo {
+      background-color: #50a3a2;
+      margin-left: 15%;
+      margin-right: 5px;
+      padding: 5px;
+    }
+    .my-card {
+      height: 450px;
+      width: 500px;
+      background-color: white;
+    }
+    .infobody {
+      background-color: white;
+      width: 100%;
+      height: 950px;
+      margin-left: 70px;
+    }
+    .mainbody {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      /* align-items: center; */
+      width: 80%;
+      margin: 5% auto;
+    }
+    .skills {
+      margin: 0 10%;
+      padding: 20px;
+      /* height: 200px; */
+       background-color:#fbfbfb;
+        border-radius: 10px;
+    }
+    .mybar {
+      display: block;
+      height: 10px;
+      background: rgb(209, 205, 205);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .mybar span {
+      float: left;
+      background-color: #50a3a2;
+      height: 10px;
+    }
+    .html {
+      width: 90%;
+      animation: html 2s;
+      border-radius: 5px;
+    }
+    .css3 {
+      width: 75%;
+      animation: css3 2s;
+      border-radius: 5px;
+    }
+    .javascript {
+      width: 30%;
+      animation: javascript 2s;
+      border-radius: 5px;
+    }
+
+    @keyframes html {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 90%;
+      }
+    }
+
+    @keyframes css3 {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 75%;
+      }
+    }
+
+    @keyframes javascript {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 30%;
+      }
+    }
+
+    .picture {
+      width: 295px;
+      height: 300px;
+      margin: 5%;
+    }
+    .myname{
+        margin: 0;
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+    }
+    .icons i{
+        font-size: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    div.icons{
+        text-align: center;
+        margin-top: 10%;
+        transition: all 0.8s linear
+    }
+    .insta:hover{
+        cursor: pointer;
+        background-color: gainsboro;
+        transform: scale(1.5);
+    }
+    .insta{
+        transition: linear 0.5s;
+        width: 10px;
+        width: 20px;
+    }
+    a{
+        width: 10px;
+        width: 20px;
+    }
+    .infobody h2{
+        text-align: center;
+    }
+    .infobody .intro{
+        padding: 15px;
+        padding-left: 55px;
+    padding-right: 55px;
+        font-size: large;
+        margin-top: -20px;
+        /* text-align: center; */
+        /* line-height: 5px; */
+    }
+    .desc{
+        padding-left: 55px;
+    }
+    .mybardiv{
+        padding: 20px;
+    }
+    .vdoinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .lol{
+        width: 330px;
+        background-color:#fbfbfb;
+        border-radius: 10px;
+    }
+    .lol p{
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .lol h3{
+        margin-left: -15px;
+    }
+    .lastbuttons button{
+        background-color: #50a3a2;
+        text-decoration: none;
+        border: 0;
+        height: 40px;
+        width: 180px;
+    }
+    button:hover{
+        box-shadow: 5px 10px 10px  gainsboro;
+        
+        background-color: #266d6a;
+        /* background-color: black; */
+        transition: 0.5s;
+        color: rgb(243, 241, 241);
+        
+    }
+    .lastbuttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20px;
+        font-size: large;
+    }
+    button{
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .last{
+        background-color: #333333;
+        height: 70px;
+    }
+    @media only screen and (max-width: 700px) {
+        .mainbody{
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar{
+            overflow: hidden;
+            width: 100%;
+        }
+        .my-card{
+            width: 100%;
+            /* height: 40%; */
+        }
+        .vdoinfo{
+            display: flex;
+            flex-direction: column;
+        }
+        .infobody{
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        .picture{
+            width: 90%;
+            height: 60%;
+        }
+        .lastbuttons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .lol{
+            width: 100%;
+        }
+        .skills{
+            margin-bottom: 30px;
+        }
+        .infobody .intro{
+            padding-left: 35px;
+            padding-right: 40px;
+            font-size: 15px;
+
+        }
+        .desc{
+            padding-left: 35px;
+        }
+        .last{
+            margin-top: 80%;
+        }
+    }
+
+
+    
+    
+  </style>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">TYP.</div>
+        <div>TITANS</div>
+      </div>
+
+      <div class="mainbody">
+        <div class="my-card">
+          <img src="myimg2.jpg" alt="profile picture" class="picture" />
+          <h3 class="myname">RUSHIKA NALAMWAR</h3>
+          <div class="icons">
+          <a class="insta"><i class="fab fa-instagram "></i></a>
+          <a><i class="fab fa-twitter"></i></a>
+          <a><i class="fab fa-facebook-f"></i></a>
+          <a><i class="fab fa-linkedin-in"></i></a>
+         </div>
+        </div>
+        <div class="infobody">
+            <br>
+            <h2>FULLSTACK MERN DEVELOPER</h2>
+            <h3 class="desc">DESCRIPTION</h3>
+            <p class="intro">My name is Rushika Nalamwar and I'm a full stack MERN developer.
+                I've been coding since I was in 10th grade and I simply love it.
+                I've done various projects on a wide range of applications.</p>
+          <div class="skills">
+                <h3>MY SKILLS</h3>
+            <h4>html5</h4>
+            <span class="mybar">
+              <span class="html"></span>
+            </span>
+
+            <h4>css3</h4>
+            <span class="mybar">
+              <span class="css3"></span>
+            </span>
+
+            <h4>javascript</h4>
+            <span class="mybar">
+              <span class="javascript"></span>
+            </span>
+        </div>
+            <div class="vdoinfo">
+                <div class="myvdo">
+                    <video  height="300" width="300" controls>
+                        <source src="myvdo.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+                <div class="lol">
+                    <ul>
+                        <h3>TODO LIST</h3>
+                        <li>HTML5</li>
+                        <LI>CSS3</LI>
+                        <LI>VANILLA JS</LI>
+                        <li>RESPONSIVE</li>
+                    </ul>
+                    <p>This allows you to create tasks, 
+                        delete tasks and edit the existing tasks
+                        from the list.
+                    </p>
+                </div>
+            </div>
+            <div class="lastbuttons">
+                <div>
+                <button style="margin-top: 7px;">SEE DEMO</button>
+            </div>
+            <div>
+                <button style="margin-top: 7px; margin-bottom: 10px;">VIEW CODE</button>
+            </div>
+            </div>
+        </div>   
+        </div>
+      </div>
+      <div class="last"> </div>
+    </div>
+  </body>
+</html>
